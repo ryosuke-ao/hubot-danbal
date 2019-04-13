@@ -31,6 +31,12 @@ module.exports = (robot) ->
     robot.respond /りょうすけ/i, (res) ->
         res.emote "彼はオードリーってお笑いグループで活動してるらしいよ。"
 
+###    robot.respond /I don't like Sam-I-am/i, (res) ->
+        room =  'general'
+        robot.messageRoom room, "Someone does not like Dr. Seus"
+        res.reply  "That Sam-I-am\nThat Sam-I-am\nI do not like\nthat Sam-I-am"
+
     robot.hear /Sam-I-am/i, (res) ->
         room =  res.envelope.user.name
         robot.messageRoom room, "That Sam-I-am\nThat Sam-I-am\nI do not like\nthat Sam-I-am"
+###
