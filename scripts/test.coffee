@@ -15,3 +15,6 @@ module.exports = (robot) ->
 
     robot.hear /たけはる/i, (res) ->
         res.emote "彼はマウンティング系男子だね"
+
+    robot.hear /かつおみ/i, (res) ->
+        res.emote "彼はすごく早漏らしいよ"
