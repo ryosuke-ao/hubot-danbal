@@ -13,8 +13,20 @@ module.exports = (robot) ->
     robot.hear /I like pie/i, (res) ->
         res.emote "makes a freshly baked pie"
 
-    robot.hear /たけはる/i, (res) ->
+    robot.respond /たけはる/i, (res) ->
         res.emote "彼はマウンティング系男子だね"
 
-    robot.hear /かつおみ/i, (res) ->
+    robot.respond /かつおみ/i, (res) ->
         res.emote "彼はすごく早漏らしいよ"
+
+    robot.respond /ゆあさ/i, (res) ->
+        res.emote "あいつはGODだね。ドシンの生まれ変わりなんじゃないかって話もあるよ。"
+
+    robot.respond /ほりお/i, (res) ->
+        res.emote "彼はすごくクールだね。パソコンはかなりの年代物を使ってるね。"
+
+    robot.respond /りょっち/i, (res) ->
+        res.emote "彼はすごくクールだね。芯が強くて、大学の教務はかなり消耗させられたって噂だ。"
+
+    robot.respond /りょうすけ/i, (res) ->
+        res.emote "彼はオードリーってお笑いグループで活動してるらしいよ。"
